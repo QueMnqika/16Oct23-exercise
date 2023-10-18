@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <img src="https://i.postimg.cc/Y9K7W3GS/logo-no-background.png" alt="LOGO">
-        <div class="title">
+        <a href="#"><img src="./img/logo-no-background.png" alt="LOGO" loading="lazy" width="250px"></a>
+        <!-- <div class="title">
             <h1>Freshe Cafe</h1>
             <small>Freshly baked for YOU</small>
-        </div>
+        </div> -->
     </header>
     <nav>
         <ul>
@@ -39,47 +40,53 @@
         <div class="products">
             <h6>Our Work?</h6>
             <h2>Our Products</h2>
-            <div class="cards">
-                <img src="" alt="cakes">
-                <h3>Cakes</h3>
-                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim magni distinctio laboriosam molestiae minus ad obcaecati iure, fugit at, amet suscipit voluptas, modi tempora adipisci </small>
-            </div>
-            <div class="cards">
-                <img src="" alt="Beverages">
-                <h3>Our Beverages</h3>
-                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum sunt voluptate ipsum earum veritatis reiciendis? Accusamus laborum voluptatibus reprehenderit consectetur mini</small>
-            </div>
-            <div class="cards">
-                <img src="" alt="Muffins">
-                <h3>Muffins</h3>
-                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae iste non quas, animi cum voluptate dicta quo accusamus in officia dolorem fugit culpa provident, quod sed</small>
+            <div class="container">
+                <div class="cards">
+                    <img src="./img/anton-6_ewhkIfFfo-unsplash.jpg"  alt="cakes">
+                    <h3>Cakes</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae iste non quas, animi cum voluptate dicta quo accusamus in officia dolorem fugit culpa provident, quod sed</p>
+                </div>
+                <div class="cards">
+                    <img src="./img/jonathan-borba-xY0Uyd81qA8-unsplash.jpg"  alt="Beverages">
+                    <h3>Our Beverages</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae iste non quas, animi cum voluptate dicta quo accusamus in officia dolorem fugit culpa provident, quod sed</p>
+                </div>
+                <div class="cards">
+                    <img src="" alt="Muffins">
+                    <h3>Muffins</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus repudiandae iste non quas, animi cum voluptate dicta quo accusamus in officia dolorem fugit culpa provident, quod sed</p>
+                </div>
             </div>
         </div>
-        <hr>
-        <div>
+        <hr style="clear: left;">
+        <div class="my-form">
             <form action="">
-                <h1>Plaace an order with us</h1>
-                <input type="text" name="Fullame" placeholder="Enter your full name">
+                <h6>Want to taste our delicious products?</h6>
+                <h3>Place an order with us</h3>
+                <input type="text" name="Fullame" placeholder="Enter your full name" class="inpt">
                 <br>
-                <input type="text" name="Email" placeholder="Enter your email address">
+                <input type="text" name="Email" placeholder="Enter your email address" class="inpt">
                 <br>
-                <input type="text" name="contact number" placeholder="Enter your contact number">
+                <input type="text" name="contact number" placeholder="Enter your contact number" class="inpt">
                 <br>
-                <label for="">Products to order:</label>
-                <br>
-                <input type="checkbox" name="Cupcakes" value="Cupcake" id="">Cupcakes
-                <br>
-                <input type="checkbox" name="Crossiants" value="Crossiants" id="">Crossiants
-                <br>
-                <input type="checkbox" name="Muffins" value="Muffins" id="">Muffins
-                <br>
-                <input type="checkbox" name="Sandiwich" value="Sandiwich" id="">Sandiwich
-                <br>
-                <input type="checkbox" name="Latte" value="Latte" id="">Latte
-                <br>
-                <input type="checkbox" name="Americano" value="Americano" id="">Americano
-                <br>
-                <input type="checkbox" name="Cappuchino" value="Cappuchino" id="">Cappuchino
+                <h4>Products to order:</h4>
+                <div class="prdcts">
+                    <input type="checkbox" name="Cupcakes" value="Cupcake" id="">Cupcakes
+                    <br>
+                    <input type="checkbox" name="Crossiants" value="Crossiants" id="">Crossiants
+                    <br>
+                    <input type="checkbox" name="Muffins" value="Muffins" id="">Muffins
+                    <br>
+                    <input type="checkbox" name="Sandiwich" value="Sandiwich" id="">Sandiwich
+                    <br>
+                    <input type="checkbox" name="Latte" value="Latte" id="">Latte
+                    <br>
+                    <input type="checkbox" name="Americano" value="Americano" id="">Americano
+                    <br>
+                    <input type="checkbox" name="Cappuchino" value="Cappuchino" id="">Cappuchino
+                    <br>
+                    <input type="checkbox" name="Green-Tea" value="Cappuchino" id="">Green Tea
+                </div>
                 <br>
                 <select name="Quantity" id="">
                     <option value="select">--Select Quantity--</option>
@@ -95,22 +102,25 @@
                     <option value="10">10</option>
                 </select>
                 <br>
-                <textarea name="Order-specificity" id="" cols="30" rows="3" placeholder="Specify your Order" required="required"></textarea>
+                <textarea name="Order-specificity" id="" cols="30" rows="5" placeholder="Specify your Order" required="required"></textarea>
                 <br>
                 <button>Place an Order!</button>
+                <input type="reset" value="Clear Order" class="reset">
             </form>
         </div>
     </section>
     <footer>
-        <div>
+        <div class="socials">
             <img src="" alt="Facebook">
-            <p>Facebook</p>
             <img src="" alt="Instagram">
-            <p>Instagram</p>
             <img src="" alt="Twitter">
+        </div>
+        <div class="socials">
+            <p>Facebook</p>
+            <p>Instagram</p>
             <p>Twitter</p>
         </div>
-        <div>
+        <div class="bttm">
             <p>Copyright 2023 &copy;</p>
             <h3>Developed by Que-M Codes</h3>
         </div>
